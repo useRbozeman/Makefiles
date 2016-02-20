@@ -1,3 +1,18 @@
+logit <- function(p)
+{
+    if (p < 0 | p > 1)
+    {
+        stop("proportion must be between 0 and 1")
+    }
+
+	log( p / (1 - p) )
+}
+ilogit <- function(x)
+{
+	exp(x) / ( 1 + exp(x) )
+}
+
+
 diamond.data <- read.csv("./diamonds.csv")
 
 pdf("./figure.pdf")

@@ -1,6 +1,6 @@
 all: report.pdf
 
-report.pdf: report.tex table.tex
+report.pdf: report.tex table.tex figure.pdf
 	texi2pdf report.tex
 
 report.tex: report.md
