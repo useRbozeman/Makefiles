@@ -16,7 +16,7 @@ we might be able to maximize profits.
 Data exploration
 ================
 
-There are currently 328 diamonds in stock.
+There are currently `r read.table("count.txt")$V1[1]` diamonds in stock.
 
 A breakdown of the catalogued diamonds is:
 
